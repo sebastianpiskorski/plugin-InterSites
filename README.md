@@ -5,7 +5,9 @@ InterSites
 
 ## Description
 
-Measures number of visits and unique visitors that have navigated across two or three specific websites. _(Unique user is determined across websites using the fingerprint config_id stored._
+Measures number of visits and unique visitors that have navigated across two or three specific websites.
+
+_(Unique user is determined across websites using the fingerprint config_id stored in the DB.)_
 
 ## Features
 
