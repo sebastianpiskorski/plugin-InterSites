@@ -1,0 +1,16 @@
+{
+ "name": "CrossWebsiteAnalytics",
+ "version": "0.1.0",
+ "description": "Analyze how visitors navigate between your websites.",
+ "theme": false,
+ "require": {
+    "piwik": ">=2.7.0-b2"
+ },
+ "authors": [
+     {
+         "name": "Piwik",
+         "email": "",
+         "homepage": ""
+     }
+ ]
+}
