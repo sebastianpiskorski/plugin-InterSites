@@ -14,7 +14,7 @@ use Piwik\Db;
 use Piwik\Log;
 use Piwik\Piwik;
 use Piwik\Segment;
-use SebastianBergmann\Exporter\Exception;
+use Exception;
 
 /**
  * DAO class that contains log aggregation methods that have to be run on demand.
