@@ -1,5 +1,5 @@
 {
- "name": "CrossWebsiteAnalytics",
+ "name": "InterSites",
  "version": "0.1.0",
  "description": "Analyze how visitors navigate between your websites.",
  "theme": false,
@@ -9,8 +9,8 @@
  "authors": [
      {
          "name": "Piwik",
-         "email": "",
-         "homepage": ""
+         "email": "contact@piwik.pro",
+         "homepage": "http://piwik.pro"
      }
  ]
 }
