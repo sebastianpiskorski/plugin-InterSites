@@ -5,7 +5,7 @@
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-angular.module('piwikApp').controller('InterSitesCompareVisitorsTool', function ($scope, $filter, $sanitize, $sce, piwikApi) {
+angular.module('piwikApp').controller('InterSitesCompareVisitorsTool', function ($scope, piwikApi) {
 
     /**
      * List of sites to check whenthe 'Go' button is clicked. Bound each displayed
@@ -37,30 +37,6 @@ angular.module('piwikApp').controller('InterSitesCompareVisitorsTool', function 
      * @type {number}
      */
     $scope.nbTotalVisitors;
-
-    /**
-     * Utility method that turns a fraction into percent.
-     *
-     * @param {number} value The quotient to convert.
-     * @return {string} A percent value rounded to 2 decimal places, ie 23.45%.
-     */
-    $scope.getPercent = function (value) {
-        return $filter('number')(value * 100, 2) + '%';
-    };
-
-    /**
-     * Utility method that sanitizes text. Used in a filter argument in the template.
-     *
-     * @param {string}
-     * @return {string}
-     */
-    $scope.getSanitized = function (untrustedText) {
-        return $sanitize(untrustedText);
-    };
-
-    $scope.getTrusted = function (untrustedText) {
-        return $sce.trustAsHtml(untrustedText);
-    };
 
     /**
      * Queries the InterSites API to find the number of shared and total visitors for
