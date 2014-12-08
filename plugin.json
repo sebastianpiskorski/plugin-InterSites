@@ -1,10 +1,10 @@
 {
     "name": "InterSites",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Analyze how visitors navigate between your websites.",
     "theme": false,
     "require": {
-        "piwik": ">=2.7.0-b3"
+        "piwik": ">=2.10.0-b6"
     },
     "authors": [
         {
