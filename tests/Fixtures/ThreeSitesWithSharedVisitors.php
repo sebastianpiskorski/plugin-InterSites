@@ -54,27 +54,27 @@ class ThreeSitesWithSharedVisitors extends Fixture
         $idSite = $this->idSite;
 
         // visitors
-        $visitor1 = self::getTracker($idSite, $dateTime, $defaultInit = true);
+        $visitor1 = $this->makeTracker($idSite, $dateTime);
         $visitor1->setIp("123.45.67.8");
         $visitor1->setCity("Järvenpää");
         $visitor1->setUserAgent("Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36");
 
-        $visitor2 = self::getTracker($idSite, $dateTime, $defaultInit = true);
+        $visitor2 = $this->makeTracker($idSite, $dateTime);
         $visitor2->setIp("99.44.55.66");
         $visitor2->setCity("Shirahama");
         $visitor2->setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0");
 
-        $visitor3 = self::getTracker($idSite, $dateTime, $defaultInit = true);
+        $visitor3 = $this->makeTracker($idSite, $dateTime);
         $visitor3->setIp("121.244.65.34");
         $visitor3->setCity("Porto Covo");
         $visitor3->setUserAgent("Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/37.0.2049.0 Safari/537.36");
 
-        $visitor4 = self::getTracker($idSite, $dateTime, $defaultInit = true);
+        $visitor4 = $this->makeTracker($idSite, $dateTime);
         $visitor4->setIp("87.45.34.98");
         $visitor4->setCity("Järvenpää");
         $visitor4->setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0");
 
-        $visitor5 = self::getTracker($idSite, $dateTime, $defaultInit = true);
+        $visitor5 = $this->makeTracker($idSite, $dateTime);
         $visitor5->setIp("76.45.63.27");
         $visitor5->setCity("Järvenpää");
         $visitor5->setUserAgent("Mozilla/5.0 (Windows NT 6.1; WOW64; rv:29.0) Gecko/20120101 Firefox/29.0");
@@ -160,5 +160,17 @@ class ThreeSitesWithSharedVisitors extends Fixture
         $visitor5->setForceVisitDateTime(Date::factory($this->dateTime)->getDatetime());
         $visitor5->setUrl('http://stikineicecap.org/katesneedle');
         $visitor5->doTrackPageView("page title");
+    }
+
+    /**
+     * @param $idSite
+     * @param $dateTime
+     * @return \PiwikTracker
+     */
+    private function makeTracker($idSite, $dateTime)
+    {
+        $tracker = self::getTracker($idSite, $dateTime, $defaultInit = true, $useLocal = true);
+        $tracker->setDebugStringAppend('forceEnableFingerprintingAcrossWebsites=1');
+        return $tracker;
     }
 }

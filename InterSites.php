@@ -7,6 +7,9 @@
  *
  */
 namespace Piwik\Plugins\InterSites;
+use Piwik\Config;
+use Piwik\Notification;
+use Piwik\Piwik;
 
 /**
  */
@@ -20,8 +23,28 @@ class InterSites extends \Piwik\Plugin
         return array(
             'AssetManager.getStylesheetFiles' => 'getStylesheetFiles',
             'AssetManager.getJavaScriptFiles' => 'getJsFiles',
-            'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys'
+            'Translate.getClientSideTranslationKeys' => 'getClientSideTranslationKeys',
+            'Request.dispatch' => 'notifyWhenPiwikNotConfiguredCorrectly',
         );
+    }
+
+    public function notifyWhenPiwikNotConfiguredCorrectly()
+    {
+        $fingerprintingEnabled = (bool)Config::getInstance()->Tracker['enable_fingerprinting_across_websites'];
+        if($fingerprintingEnabled) {
+            return;
+        }
+
+        $notification = new Notification("<b>Warning: InterSites Plugin requires a change in your Piwik configuration:</b><br/>"
+            . " To collect data for InterSites plugin, you must configure Piwik to allow the tracking of your visitors across websites. </br>"
+            . " (By default Piwik does not know if a given user has visited several of your websites.) </br>"
+            . " To continue using InterSites you must edit your file config/config.ini.php and add the following setting: </br>"
+            . "<code>[Tracker]</br>enable_fingerprinting_across_websites=1</code><br/>"
+            . " After you make this change, give Piwik time to collect new data. Then view your users across websites report in the <b>All Websites</b> dashboard</a>."
+        );
+        $notification->raw = true;
+        $notification->context = Notification::CONTEXT_WARNING;
+        Notification\Manager::notify('InterSites_MustBeConfigured', $notification);
     }
 
     public function getStylesheetFiles(&$files)

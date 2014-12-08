@@ -5,11 +5,8 @@
  * @link http://piwik.org
  * @license http://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
-namespace Piwik\Plugins\InterSites\tests\Unit;
+namespace Piwik\Plugins\InterSites\tests\Integration;
 
-use DatabaseTestCase;
-use Piwik\Common;
-use Piwik\Db\BatchInsert;
 use Piwik\Plugins\InterSites\Model\DistinctMetricsAggregator;
 
 /**
@@ -17,7 +14,7 @@ use Piwik\Plugins\InterSites\Model\DistinctMetricsAggregator;
  * @group InterSites_Unit
  * @group InterSites_DistinctMetricsAggregatorTest
  */
-class DistinctMetricsAggregatorTest extends DatabaseTestCase
+class DistinctMetricsAggregatorTest extends \Piwik\Tests\Framework\TestCase\IntegrationTestCase
 {
     /**
      * @var DistinctMetricsAggregator
