@@ -21,4 +21,5 @@ This plugin is very new, so there is only one. However! We have big plans for th
 
 ## Changelog
 
-Nothing to report. Yet.
+ * 0.1.2: Compatibility with Piwik 2.10.0 (Notification will explain that config setting `enable_fingerprinting_across_websites=1` is required)
+ * 0.1.0: Initial release
