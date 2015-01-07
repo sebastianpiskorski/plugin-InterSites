@@ -24,6 +24,7 @@ describe("CompareCommonVisitors", function () {
         expect.screenshot('stats').to.be.captureSelector('.ngdialog-content', function (page) {
             page.click('.submit[value="Add Site"]');
             page.evaluate(function () {
+                angular.element('[piwik-siteselector]:eq(0)>div').scope().switchSite({idsite: 1, name: "Site 1"});
                 angular.element('[piwik-siteselector]:eq(1)>div').scope().switchSite({idsite: 2, name: "Site 2"});
                 angular.element('[piwik-siteselector]:eq(2)>div').scope().switchSite({idsite: 3, name: "Site 3"});
             });
