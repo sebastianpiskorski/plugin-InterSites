@@ -1,3 +1,3 @@
-tests/Integration/processed/
-tests/Integration/expected/screenshot-diffs/
-tests/UI/processed-ui-screenshots/
+/tests/System/processed/
+/tests/System/expected/screenshot-diffs/
+/tests/UI/processed-ui-screenshots/

@@ -7,10 +7,9 @@
  */
 namespace Piwik\Plugins\InterSites\Tests\Fixtures;
 
-use Piwik\Common;
 use Piwik\Date;
 use Piwik\Db;
-use Piwik\Tests\Fixture;
+use Piwik\Tests\Framework\Fixture;
 
 /**
  * Adds three sites and tracks some visits w/ visitors that visit each site.
@@ -169,7 +168,7 @@ class ThreeSitesWithSharedVisitors extends Fixture
      */
     private function makeTracker($idSite, $dateTime)
     {
-        $tracker = self::getTracker($idSite, $dateTime, $defaultInit = true, $useLocal = true);
+        $tracker = self::getTracker($idSite, $dateTime, $defaultInit = true);
         $tracker->setDebugStringAppend('forceEnableFingerprintingAcrossWebsites=1');
         return $tracker;
     }

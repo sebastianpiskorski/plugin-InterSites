@@ -7,28 +7,21 @@
  */
 namespace Piwik\Plugins\InterSites\tests\System;
 
-use Piwik\Config;
 use Piwik\Date;
-use Piwik\Tests\Fixture;
 use Piwik\Plugins\InterSites\Tests\Fixtures\ThreeSitesWithSharedVisitors;
-use Piwik\Tracker\TrackerConfig;
+use Piwik\Tests\Framework\TestCase\SystemTestCase;
 
 /**
  * @group InterSites
  * @group InterSites_Integration
  * @group InterSites_ApiTest
  */
-class ApiTest extends \Piwik\Tests\Framework\TestCase\SystemTestCase
+class ApiTest extends SystemTestCase
 {
     /**
-     * @var Fixture
+     * @var ThreeSitesWithSharedVisitors
      */
     public static $fixture;
-
-    public function setUp()
-    {
-        parent::setUp();
-    }
 
     public function testGetCommonVisitorsSucceedsWithAllSites()
     {
