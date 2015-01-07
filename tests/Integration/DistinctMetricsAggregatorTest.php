@@ -7,7 +7,9 @@
  */
 namespace Piwik\Plugins\InterSites\tests\Integration;
 
+use Piwik\Date;
 use Piwik\Plugins\InterSites\Model\DistinctMetricsAggregator;
+use Piwik\Segment;
 
 /**
  * @group InterSites
@@ -30,9 +32,17 @@ class DistinctMetricsAggregatorTest extends \Piwik\Tests\Framework\TestCase\Inte
         $this->instance = new DistinctMetricsAggregator();
     }
 
-    public function testGetCommonVisitorCountFailsWithOneSiteAndDateRange()
+    /**
+     * @expectedException \Exception
+     */
+    public function test_getCommonVisitorCount_Throws_WhenOneSiteSupplied()
     {
-        // TODO
+        $this->instance->getCommonVisitorCount(
+            array(1),
+            Date::factory("2012-01-01"),
+            Date::factory("2012-02-01"),
+            new Segment("", array(1))
+        );
     }
 
     public function testGetCommonVisitorCountSucceedsWithMultipleSitesAndDateRange()

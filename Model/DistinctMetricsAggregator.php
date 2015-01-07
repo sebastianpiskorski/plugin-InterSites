@@ -48,6 +48,7 @@ class DistinctMetricsAggregator
      *
      *               **nb_shared_visitors** is the total number of unique visitors who visited
      *               every site in the list.
+     * @throws Exception if less than 2 site IDs are supplied,
      */
     public function getCommonVisitorCount($idSites, Date $startDate, Date $endDate, Segment $segment)
     {
