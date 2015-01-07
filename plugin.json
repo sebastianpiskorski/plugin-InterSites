@@ -4,7 +4,7 @@
     "description": "Analyze how visitors navigate between your websites.",
     "theme": false,
     "require": {
-        "piwik": ">=2.10.0-b6"
+        "piwik": ">=2.10.0"
     },
     "authors": [
         {
