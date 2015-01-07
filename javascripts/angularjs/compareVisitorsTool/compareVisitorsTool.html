@@ -14,7 +14,8 @@
                  show-selected-site="true"
                  show-all-sites-item="false"
                  switch-site-on-select="false"
-                 ng-model="sitesToCheck[$index]"></div>
+                 ng-model="sitesToCheck[$index]"
+                 sitename="{{ 'InterSites_None'|translate }}"></div>
             <a ng-click="sitesToCheck.splice($index, 1)" ng-class="{'invisible': $index < 2}">X</a>
         </div>
 

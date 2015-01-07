@@ -71,5 +71,6 @@ class InterSites extends \Piwik\Plugin
         $keys[] = "InterSites_CommonVisitorsTool_LaunchLinkText";
         $keys[] = "InterSites_Go";
         $keys[] = "InterSites_AddSite";
+        $keys[] = "InterSites_None";
     }
 }

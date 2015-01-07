@@ -13,7 +13,7 @@ angular.module('piwikApp').controller('InterSitesCompareVisitorsTool', function 
      *
      * @type {object[]}
      */
-    $scope.sitesToCheck = [{id: 1}, {id: 1}];
+    $scope.sitesToCheck = [{}, {}];
 
     /**
      * List of site specific statistics to display. Each element is an object with

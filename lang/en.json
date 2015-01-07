@@ -9,6 +9,7 @@
         "CommonVisitorsTool_AllSitesNoVisits": "There are no visits for this period",
         "CommonVisitorsTool_LaunchLinkText": "Number of visitors who viewed several websites",
         "Go": "Go",
-        "AddSite": "Add Site"
+        "AddSite": "Add Site",
+        "None": "None"
     }
 }
