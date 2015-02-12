@@ -1,7 +1,7 @@
 {
     "name": "InterSites",
     "version": "0.1.2",
-    "description": "Analyze how visitors navigate between your websites.",
+    "description": "Analyze how many visitors navigate between your websites.",
     "theme": false,
     "require": {
         "piwik": ">=2.10.0"
