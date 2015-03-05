@@ -20,7 +20,7 @@ To access this functionality, navigate to the All Websites dashboard. Here there
 This plugin is very new, so there is only one. However! We have big plans for this plugin and will be working to include many new and mind-bending features.
 
 ## Changelog
-
+ * 0.2.1: Market release
  * 0.2.0: Introduced composer.json file
  * 0.1.2: Compatibility with Piwik 2.10.0 (Notification will explain that config setting `enable_fingerprinting_across_websites=1` is required)
  * 0.1.0: Initial release
