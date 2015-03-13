@@ -1,0 +1,10 @@
+{
+    "InterSites": {
+        "AddSite": "Lägg till webbplats",
+        "CommonVisitorsTool_AllSitesStatsDesc": "%s besökare av totalt %s (%s) besökte webbplatserna",
+        "CommonVisitorsTool_SiteStatsDesc": "%s av %s besökarna besökte samtliga webbplatser",
+        "CommonVisitorsToolIntro": "Hitta antal besökare som besökte samtliga av följande webbplatser",
+        "None": "Ingen",
+        "SharedVisitors": "Gemensamma besökare"
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "InterSites": {
+        "AddSite": "Aggiungi Sito",
+        "CommonVisitorsTool_AllSitesNoVisits": "Non ci sono visite in questo periodo",
+        "CommonVisitorsTool_AllSitesStatsDesc": "%s visitatori su un totale di %s (%s) hanno esplorato i siti web",
+        "CommonVisitorsTool_LaunchLinkText": "Numero di visitatori che hanno visto più siti",
+        "CommonVisitorsTool_SiteStatsDesc": "%s di %s visitatori che hanno visitato tutti i siti web",
+        "CommonVisitorsTool_SiteStatsNoVisits": "Non ci sono stati visitatori per %s in questo periodo",
+        "CommonVisitorsToolIntro": "Trova il numero dei visitatori che hanno visitato tutti i seguenti siti web",
+        "Go": "Vai",
+        "None": "Nessuno",
+        "PleasSupplyAtLeastTwoDifferentSites": "Scegli almeno due differenti siti web.",
+        "SharedVisitors": "Visitatori Condivisi"
+    }
+}

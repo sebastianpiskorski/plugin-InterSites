@@ -1,0 +1,15 @@
+{
+    "InterSites": {
+        "AddSite": "Seite hinzufügen",
+        "CommonVisitorsTool_AllSitesNoVisits": "Es gibt keine Besuche für diesen Zeitraum",
+        "CommonVisitorsTool_AllSitesStatsDesc": "%s Besucher von einem Total von %s (%s) haben die Webseiten besucht",
+        "CommonVisitorsTool_LaunchLinkText": "Anzahl der Besucher welche verschiedene Webseiten aufgerufen haben.",
+        "CommonVisitorsTool_SiteStatsDesc": "%s von %s Besucher besuchten alle Webseiten",
+        "CommonVisitorsTool_SiteStatsNoVisits": "Es gibt keine Besucher für %s in diesem Zeitraum",
+        "CommonVisitorsToolIntro": "Finde die Anzahl Besucher welche alle der folgenden Webseiten besuchten",
+        "Go": "Los",
+        "None": "Keine",
+        "PleasSupplyAtLeastTwoDifferentSites": "Bitte mindestens zwei verschiedene Webseiten wählen.",
+        "SharedVisitors": "Geteilte Besucher"
+    }
+}
