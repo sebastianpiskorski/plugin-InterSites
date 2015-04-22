@@ -1,15 +1,15 @@
 {
     "InterSites": {
-        "AddSite": "Přidat stránky",
-        "CommonVisitorsTool_AllSitesNoVisits": "Pro toto období nejsou žádné návštěvy",
-        "CommonVisitorsTool_AllSitesStatsDesc": "%s návštěvníků z celkového počtu %s (%s) procházelo stránky",
-        "CommonVisitorsTool_LaunchLinkText": "Počet návštěvníků, kteří zobrazili několik stránek",
+        "PleasSupplyAtLeastTwoDifferentSites": "Vyberte alespoň dvě různé webové stránky.",
+        "SharedVisitors": "Sdílení návštěvníci",
+        "CommonVisitorsToolIntro": "Zjistěte počet návštěvníků, kteří navštívili všechny z následujících stránek",
         "CommonVisitorsTool_SiteStatsDesc": "%s z %s návštěvníků navštívilo všechny stránky",
         "CommonVisitorsTool_SiteStatsNoVisits": "Během tohoto období nebyli pro %s žádní návštěvníci",
-        "CommonVisitorsToolIntro": "Zjistěte počet návštěvníků, kteří navštívili všechny z následujících stránek",
+        "CommonVisitorsTool_AllSitesStatsDesc": "%s návštěvníků z celkového počtu %s (%s) procházelo stránky",
+        "CommonVisitorsTool_AllSitesNoVisits": "Pro toto období nejsou žádné návštěvy",
+        "CommonVisitorsTool_LaunchLinkText": "Počet návštěvníků, kteří zobrazili několik stránek",
         "Go": "Jdi",
-        "None": "Žádní",
-        "PleasSupplyAtLeastTwoDifferentSites": "Vyberte alespoň dvě různé webové stránky.",
-        "SharedVisitors": "Sdílení návštěvníci"
+        "AddSite": "Přidat stránky",
+        "None": "Žádní"
     }
 }

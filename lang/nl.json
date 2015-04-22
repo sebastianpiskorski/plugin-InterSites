@@ -1,5 +1,9 @@
 {
     "InterSites": {
-        "SharedVisitors": "Gedeelde Bezoekers"
+        "PleasSupplyAtLeastTwoDifferentSites": "Kies tenminste twee verschillende websites.",
+        "SharedVisitors": "Gedeelde Bezoekers",
+        "CommonVisitorsTool_AllSitesNoVisits": "Er zijn geen bezoeken deze periode",
+        "AddSite": "Site toevoegen",
+        "None": "Geen"
     }
 }

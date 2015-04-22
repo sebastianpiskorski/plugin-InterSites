@@ -1,15 +1,15 @@
 {
     "InterSites": {
-        "AddSite": "Προσθήκη ιστοτόπου",
-        "CommonVisitorsTool_AllSitesNoVisits": "Δεν υπάρχουν επισκέψεις για αυτή την περίοδο",
-        "CommonVisitorsTool_AllSitesStatsDesc": "%s επισκέπτες από ένα σύνολο %s (%s) που επισκέφθηκαν τους ιστοτόπους",
-        "CommonVisitorsTool_LaunchLinkText": "Αριθμός επισκεπτών που είδαν διάφορους ιστοτόπους",
+        "PleasSupplyAtLeastTwoDifferentSites": "Επιλέξτε τουλάχιστον δύο διαφορετικούς ιστοτόπους.",
+        "SharedVisitors": "Μοιρασμένοι Επισκέπτες",
+        "CommonVisitorsToolIntro": "Εύρεση του αριθμού των επισκεπτών που επισκέφθηκαν τους παρακάτω ιστοτόπους",
         "CommonVisitorsTool_SiteStatsDesc": "%s από %s επισκέπτες επισκέφθηκαν όλους τους ιστοτόπους",
         "CommonVisitorsTool_SiteStatsNoVisits": "Δεν υπήρχαν επισκέπτες για το %s για αυτή την περίοδο",
-        "CommonVisitorsToolIntro": "Εύρεση του αριθμού των επισκεπτών που επισκέφθηκαν τους παρακάτω ιστοτόπους",
+        "CommonVisitorsTool_AllSitesStatsDesc": "%s επισκέπτες από ένα σύνολο %s (%s) που επισκέφθηκαν τους ιστοτόπους",
+        "CommonVisitorsTool_AllSitesNoVisits": "Δεν υπάρχουν επισκέψεις για αυτή την περίοδο",
+        "CommonVisitorsTool_LaunchLinkText": "Αριθμός επισκεπτών που είδαν διάφορους ιστοτόπους",
         "Go": "Μετάβαση",
-        "None": "Κανένα",
-        "PleasSupplyAtLeastTwoDifferentSites": "Επιλέξτε τουλάχιστον δύο διαφορετικούς ιστοτόπους.",
-        "SharedVisitors": "Μοιρασμένοι Επισκέπτες"
+        "AddSite": "Προσθήκη ιστοτόπου",
+        "None": "Κανένα"
     }
 }
