@@ -28,7 +28,7 @@ class ApiTest extends SystemTestCase
         $this->assertApiResponseEqualsExpected("InterSites.getCommonVisitors", array(
             'idSite' => 'all',
             'date' => Date::factory(self::$fixture->dateTime)->toString(),
-            'period' => 'month',
+            'period' => array('day', 'week', 'month'),
         ));
     }
 
@@ -37,7 +37,7 @@ class ApiTest extends SystemTestCase
         $this->assertApiResponseEqualsExpected("InterSites.getCommonVisitors", array(
             'idSite' => 1,
             'date' => Date::factory(self::$fixture->dateTime)->toString(),
-            'period' => 'month'
+            'period' => array('day', 'week', 'month')
         ));
     }
 
@@ -46,7 +46,7 @@ class ApiTest extends SystemTestCase
         $this->assertApiResponseEqualsExpected("InterSites.getCommonVisitors", array(
             'idSite' => '1,2',
             'date' => Date::factory(self::$fixture->dateTime)->toString(),
-            'period' => 'month',
+            'period' => array('day', 'week', 'month'),
             'segment' => 'city==Järvenpää'
         ));
     }

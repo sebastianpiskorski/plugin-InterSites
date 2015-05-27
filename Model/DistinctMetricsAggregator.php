@@ -65,7 +65,11 @@ class DistinctMetricsAggregator
                . Common::getSqlStringFieldsArray($idSites) . ')';
         $orderBy = false;
         $groupBy = 'config_id';
-        $bind = array_merge(array($startDate->toString(), $endDate->toString()), $idSites);
+
+        $startDateTime = new \DateTime($startDate->toString());
+        $endDateTime = new \DateTime($endDate->toString());
+
+        $bind = array_merge(array($startDateTime->format("Y-m-d 00:00:00"), $endDateTime->format("Y-m-d 23:59:59")), $idSites);
 
         $innerQuery = $segment->getSelectQuery($select, $from, $where, $bind, $orderBy, $groupBy);
 

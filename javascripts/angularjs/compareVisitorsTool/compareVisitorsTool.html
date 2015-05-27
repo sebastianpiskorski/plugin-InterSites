@@ -20,10 +20,10 @@
         </div>
 
         <div class="site-stats-cell" ng-if="siteStats[$index] && siteStats[$index].nb_uniq_visitors">
-            <span piwik-translate="InterSites_CommonVisitorsTool_SiteStatsDesc">{{ (nbSharedVisitors / siteStats[$index].nb_uniq_visitors) * 100 | number : 2 }}%::<span class="site-name">{{ siteStats[$index].siteName }}</span></span>.
+            <span piwik-translate="InterSites_CommonVisitorsTool_SiteStatsDesc">{{ (nbSharedVisitors / siteStats[$index].nb_uniq_visitors) * 100 | number : 2 }}%::<span class="site-name" ng-bind-html="siteStats[$index].siteName"></span></span>.
         </div>
         <div class="site-stats-cell" ng-if="siteStats[$index] && siteStats[$index].nb_uniq_visitors == 0">
-            <span piwik-translate="InterSites_CommonVisitorsTool_SiteStatsNoVisits"><span class="site-name">{{ siteStats[$index].siteName }}</span></span>.
+            <span piwik-translate="InterSites_CommonVisitorsTool_SiteStatsNoVisits"><span class="site-name" ng-bind-html="siteStats[$index].siteName"></span></span>.
         </div>
     </div>
 
@@ -38,7 +38,7 @@
 
             <span ng-if="nbSharedVisitors !== undefined && nbTotalVisitors">
                 <span piwik-translate="InterSites_CommonVisitorsTool_AllSitesStatsDesc">{{ nbSharedVisitors }}::{{ nbTotalVisitors }}::{{ (nbSharedVisitors / nbTotalVisitors) * 100 | number : 2 }}%</span>:<br/>
-                <span ng-repeat="stats in siteStats track by $index"><span ng-show="!$first">,</span><strong> {{ stats.siteName }}</strong></span>.
+                <span ng-repeat="stats in siteStats track by $index"><span ng-show="!$first">,</span><strong ng-bind-html="stats.siteName"></strong></span>.
             </span>
             <span ng-if="nbTotalVisitors === 0">
                 {{ 'InterSites_CommonVisitorsTool_AllSitesNoVisits'|translate }}.
