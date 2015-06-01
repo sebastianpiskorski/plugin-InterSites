@@ -1,5 +1,6 @@
 {
     "InterSites": {
-        "None": "Brak"
+        "None": "Brak",
+        "MetricProcessingMethodNotification":  "Metryka wspólnych użytkowników jest liczona dla strefy czasowej UTC w ramach wybranej daty."
     }
 }

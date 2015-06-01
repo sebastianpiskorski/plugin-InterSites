@@ -10,6 +10,7 @@
         "CommonVisitorsTool_LaunchLinkText": "Number of visitors who viewed several websites",
         "Go": "Go",
         "AddSite": "Add Site",
-        "None": "None"
+        "None": "None",
+        "MetricProcessingMethodNotification":  "Shared visitors metric is processed in the UTC timezone for the selected date."
     }
 }
