@@ -15,6 +15,8 @@ _(Unique user is determined across websites using the fingerprint config\_id sto
 
 To access this functionality, navigate to the All Websites dashboard. Here there will be a new link that says _Number of visitors who viewed several websites_. Click this link and a dialog will display that will allow you to get visitor metrics for many sites.
 
+Comparison of visits is done in dates for the UTC time, not for the site specific time.
+
 ### _Those are all the features available right now._
 
 This plugin is very new, so there is only one. However! We have big plans for this plugin and will be working to include many new and mind-bending features.

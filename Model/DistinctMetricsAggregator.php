@@ -31,6 +31,8 @@ class DistinctMetricsAggregator
      * a set of sites and the number of unique visitors that visited all of the sites
      * in the set.
      *
+     * Comparison is done in dates for the UTC time, not for the site specific time.
+     *
      * Performance: The SQL query this method executes was tested on a Piwik instance
      *              with 13 million visits total. Computing data for 4 sites with no
      *              date limit took 13s to complete.
