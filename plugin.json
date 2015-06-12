@@ -1,6 +1,6 @@
 {
     "name": "InterSites",
-    "version": "0.2.1",
+    "version": "0.2.2",
     "description": "Analyze how many visitors navigate between your websites.",
     "theme": false,
     "require": {
